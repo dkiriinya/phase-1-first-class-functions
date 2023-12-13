@@ -1,10 +1,12 @@
-const { spy } = require("chai");
 
+function run(){
+    console.log ("run forest run")
+}
 function receivesAFunction(callback){
     callback()
 }
 function returnsANamedFunction() {
-    return function namedFunction(){
+    return function run(){
 
     }
     
@@ -14,4 +16,6 @@ function returnsAnAnonymousFunction(){
 
     }
 }
+receivesAFunction(run)
+
 
